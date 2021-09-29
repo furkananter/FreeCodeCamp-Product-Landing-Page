@@ -1,8 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#icon{
-    width: 300px;
+body{
+    background-color: peachpuff;
+    font-family: 'Lato' sans-serif;
 }
