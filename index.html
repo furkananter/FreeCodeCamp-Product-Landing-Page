@@ -11,104 +11,111 @@
 </head>
 
 <body>
-    <header id="header">
-        <div><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" style="max-width:300px;"></div>
-        <nav id="nav-bar">
+    <div id="sayfa-sarici">
+        <!-- Burası Sayfayı Saran Div olacak -->
+        <header id="header">
+        <!-- Burada Logo ve Navigation Bar olacak! -->
+          <div class="logo">
+            <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+          </div>
+        <!-- Navigation Bar'ın başladığı yer!-->
+          <nav id="nav-bar">
             <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+              <li><a class="nav-link" href="#features">Features</a></li>
+              <li><a class="nav-link" href="#how-it-works">How it Works</a></li>
+              <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <section id="features">
-            <h2>Handcrafted, home-made masterpieces</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="submit" id="submit" name="submit">
-            </form>
-        <div id="komple">
-            <div class="icon">
-            <i class="fas fa-fire" style="color:orange;"></i>
-            </div>
-            <div class="aciklama">
-                <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-            </div>
-        </div>
-        <div id="komple">
-            <div class="icon">
-            <i class="fas fa-battery-full" style="color:orange;"></i>
-            </div>
-            <div class="aciklama">
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-            </div>
-        </div>
-        <div id="komple">
-            <div class="icon">
-            <i class="fas fa-truck" style="color:orange;"></i>
-            </div>
-            <div class="aciklama">
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-            </div>
-        </div>
-        </section>
-    </div>
-    <div class="container">
-        <section id="how-it-works">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/bxdHlHP2zq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-    </div>
-    <div class="container">
-        <section id="pricing">
-            <div id="product" class="tenor">
-                <div class="level">Tenor Trombone</div>
-            <h2>$600</h2>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum</li>
-            </ul>
-            <button class="btn">Select</button>
-            </div>
-            <div id="product" class="bass">
-                <div class="bass">Bass Trombone</div>
-            <h2>$900</h2>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum</li>
-            </ul>
-            <button class="btn">Select</button>
-            </div>
-            <div id="product" class="tenor">
-                <div class="level">Valve Trombone</div>
-            <h2>$1200</h2>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum</li>
-            </ul>
-            <button class="btn">Select</button>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <span>Copyright 2016, Original Trombones</span>
-    </footer>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+          </nav>
+        <!-- Nav-bar bittiği yer! -->
+        </header><!--Header'in bittiği Yer, Şimdi Sıra Hero'da!-->
+        <div class="container"></div>
+           <section id="hero"><!--Hero'nun Başladığı Yer-->
+             <h2>Handcrafted, home-made masterpieces</h2>
+             <form id="form" action="https://www.freecodecamp.com/email-submit">
+               <input id="email" type="email" name="email" placeholder="E-mail Giriniz" required>
+               <input type="submit" name="submit" id="submit" value="Başla!" class="btn">
+             </form>
+           </section><!--Hero Bitiş-->
+         <div class="container"><!--Footer'a kadar olan Kısımın Başlangıcı-->
+           <section id="features">
+            <div class="grid">
+              <div class="icon">
+                <i class="fa fa-3x fa-fire"></i>
+              </div><!--icon 1'i kapsayan div-->  
+              <div class="desc">
+                 <h2>Premium Materials</h2>
+                   <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+              </div><!--description 1'i kapsayan div-->  
+            </div><!--icon ve description'u kapsayan div 1-->
+             
+             <div class="grid">
+              <div class="icon">
+                <i class="fa fa-3x fa-truck"></i>
+              </div><!--icon'u kapsayan div 2-->  
+              
+               <div class="desc">
+                 <h2>Fast Shipping</h2>
+                 <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+               </div><!--description'u kapsayan div 2-->  
+             </div><!--icon ve description'u kapsayan div 2-->
+             <div class="grid">
+              <div class="icon">
+                <i class="fa fa-3x fa-battery-full"></i>
+              </div><!--icon'u kapsayan div 3-->  
+               <div class="desc">
+                 <h2>Quality Assurance</h2>
+                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+               </div><!--description 3'yi kapsayan div-->  
+             </div><!--icon ve description'u kapsayan div 3-->
+           </section><!--Features Kısmını kapsayan section-->
+           <section id="how-it-works">
+              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/bxdHlHP2zq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </section><!--Video Bitiş-->
+             <section id="pricing">
+               <div class="product" id="tenor">
+                 <div class="level">Tenor Trombone</div>
+                 <h2>$600</h2>
+                 <ol>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                 </ol>
+                 <button class="btn">Select</button>
+               </div><!--Birinci Pricing-->
+               <div class="product" id="bass">
+                 <div class="level">Bass Trombone</div>
+                 <h2>$900</h2>
+                 <ol>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                 </ol>
+                 <button class="btn">Select</button>
+               </div><!--İkinci Pricing-->
+               <div class="product" id="valve">
+                 <div class="level">Valve Trombone</div>
+                 <h2>$1200</h2>
+                 <ol>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                 </ol>
+                 <button class="btn">Select</button>
+               </div><!--Üçüncü Pricing-->
+             </section><!--Pricing Table-->
+          <footer>
+              <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+              </ul>
+            <span>Copyright 2016, Original Trombones</span>
+          </footer><!--Footer Bitişi-->
+         </div> <!--3'lü icon ve bilgilendirme-->
+        </div><!--Sayfa Sarıcı-->
 </body>
 
 
